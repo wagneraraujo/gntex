@@ -1,0 +1,92 @@
+.logo {
+  max-width: 55%;
+  margin: 0;
+}
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+
+  li {
+    margin: 0px 20px;
+  }
+  .nav-link {
+    color: $gray;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 4px solid $orange;
+      color: $secondary !important;
+    }
+  }
+}
+
+header {
+  background: linear-gradient(194.01deg, #ffffff 9.6%, #eaf2f5 89.64%);
+  padding: 0px 0px 80px 0;
+  @include for-desktop-up {
+    padding: 0px 0px 120px 0;
+  }
+  height: 100vh;
+}
+.imgFundo {
+  background-image: none;
+
+  @include for-desktop-up {
+    background-image: url("../img/img-header.png");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 200px);
+    margin-top: 60px;
+  }
+  @include for-min-desktop {
+    background-image: url("../img/img-header.png");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 300px);
+    margin-top: 60px;
+  }
+  @include for-min-tablet {
+    background-image: url("../img/img-header.png");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 400px);
+    margin-top: 60px;
+  }
+}
+
+.lineTextHeader {
+  padding: 80px 16px;
+  color: $text;
+
+  @include for-desktop-up {
+    padding: 120px 32px;
+  }
+  h1 {
+    color: $primary;
+    margin-bottom: 16px;
+    span {
+      color: $orange;
+    }
+  }
+  h4 {
+    font-weight: 500;
+  }
+  p {
+    font-weight: 300;
+    margin-top: 22px;
+  }
+  a {
+    @include btnClean(transparent, $primary);
+  }
+}
