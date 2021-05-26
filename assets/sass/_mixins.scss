@@ -37,8 +37,8 @@
   transition: background-color 0.6s ease-out;
 }
 
-@mixin btnClean($back, $fonteColor) {
-  border: 2px solid #035a94;
+@mixin btnClean($back, $fonteColor, $border) {
+  border: 2px solid $border;
   box-sizing: border-box;
   border-radius: 5px;
   font-style: normal;
@@ -51,7 +51,7 @@
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 16px 32px;
+  padding: 14px 32px;
   text-decoration: none;
   margin: 8px 0px;
   @include transicao;
@@ -59,5 +59,6 @@
   &:focus {
     background-color: $primary;
     color: #fff;
+    border: 2px solid $border;
   }
 }

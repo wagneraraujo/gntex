@@ -87,6 +87,6 @@ header {
     margin-top: 22px;
   }
   a {
-    @include btnClean(transparent, $primary);
+    @include btnClean(transparent, $primary, $primary);
   }
 }
