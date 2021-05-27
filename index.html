@@ -18,10 +18,15 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="assets/sass/style.scss" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header id="home">
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav
+				class="navbar navbar-expand-lg navbar-light fixed-top"
+				data-aos="fade-in"
+				id="menuHeader"
+			>
 				<div class="container-fluid align-items-center">
 					<div class="logo navbar-brand">
 						<img src="assets/img/logo.png" alt="Gntec - Soluções em tecnologia" class="img-fluid" />
@@ -65,12 +70,14 @@
 			<div class="container-fluid imgFundo">
 				<div class="row lineTextHeader">
 					<div class="col-12 col-md-6">
-						<h1><span>GNTEC</span> Soluções  em Tecnologia</h1>
-						<h4>
+						<h1 data-aos="fade-up" data-aos-duration="1000">
+							<span>GNTEC</span> Soluções  em Tecnologia
+						</h1>
+						<h4 data-aos="fade-up" data-aos-duration="1400">
 							Especialista em desenvolvimento  de softwares sob medida.  Somos o parceiro de negócio
 							para levar a sua empresa à Transformação Digital de forma ágil e descomplicada.
 						</h4>
-						<p>
+						<p data-aos="fade-up" data-aos-duration="1800">
 							Experiência de mais de 20 anos no desenvolvimento de software para os mercados
 							financeiro, indústria, comércio e varejo.
 						</p>
@@ -83,7 +90,7 @@
 
 		<section class="produtos" id="produtos">
 			<div class="container">
-				<div class="row titleSection">
+				<div class="row titleSection" data-aos="fade-in" data-aos-duration="1000">
 					<div class="subTitle">Produtos</div>
 					<div>
 						<h2>Conheça nossas soluções que podem somar para o crescimento do seu negócio</h2>
@@ -98,6 +105,8 @@
 									<img
 										src="assets/img/gcontrol.png"
 										class="img-fluid"
+										data-aos="fade-right"
+										data-aos-duration="1000"
 										alt="Gcontrol- Gerenciador de Controle Contábil: Sistema de controle de batimentos contábeis e apuração de diferenças 
 de forma parametrizável e automatizada."
 									/>
@@ -131,6 +140,8 @@ de forma parametrizável e automatizada."
 							<div class="col-12 col-sm-6 order-0 order-sm-1">
 								<div class="imgProduto">
 									<img
+										data-aos="fade-left"
+										data-aos-duration="1000"
 										src="assets/img/gncer.png"
 										class="img-fluid"
 										alt="Gncer - Gerenciador de Certificações Contábeis: Sistema proporciona aos profissionais de contabilidade, analisarem as informações e proporem as soluções para corrigirem eventuais inconsistências."
@@ -150,6 +161,8 @@ de forma parametrizável e automatizada."
 										src="assets/img/rpa.png"
 										alt="Automatizaçãõ de processos"
 										class="img-fluid"
+										data-aos="fade-down"
+										data-aos-duration="1000"
 									/>
 								</div>
 								<h5>Automatização de Processos (RPA)</h5>
@@ -161,7 +174,13 @@ de forma parametrizável e automatizada."
 							</div>
 							<div class="col-12 col-sm-6 smallTextProdutos">
 								<div>
-									<img src="assets/img/conversor.png" alt="Conversor" class="img-fluid" />
+									<img
+										src="assets/img/conversor.png"
+										alt="Conversor"
+										class="img-fluid"
+										data-aos="fade-down"
+										data-aos-duration="1200"
+									/>
 								</div>
 								<h5>Conversor</h5>
 								<p>
@@ -177,14 +196,14 @@ de forma parametrizável e automatizada."
 
 		<section class="servicos" id="servicos">
 			<div class="container">
-				<div class="row titleSection">
+				<div class="row titleSection" data-aos="fade-down" data-aos-duration="1000">
 					<div class="subTitle">Serviços</div>
 					<div>
 						<h2>Soluções tecnológicas com alta qualidade e competitividade</h2>
 					</div>
 				</div>
 
-				<div class="row listServicos">
+				<div class="row listServicos" data-aos="fade-down" data-aos-duration="1000">
 					<div class="itemServicos col-12 col-sm-3">
 						<img src="assets/img/check.png" alt="" />
 						<small>Alocação de Profissionais</small>
@@ -202,7 +221,7 @@ de forma parametrizável e automatizada."
 						<small>Fábrica de Testes</small>
 					</div>
 				</div>
-				<div class="row listServicos">
+				<div class="row listServicos" data-aos="fade-up" data-aos-duration="1000">
 					<div class="itemServicos col-12 col-sm-4 col-md-4">
 						<img src="assets/img/check.png" alt="" />
 						<small>Preparação e execução de atividades para LGPD</small>
@@ -221,7 +240,7 @@ de forma parametrizável e automatizada."
 
 		<section class="sobre" id="sobre">
 			<div class="container">
-				<div class="row titleSection">
+				<div class="row titleSection" data-aos="fade-up" data-aos-duration="1000">
 					<div class="subTitle">Sobre</div>
 					<div>
 						<h2>Mais sobre a Gntec</h2>
@@ -229,7 +248,7 @@ de forma parametrizável e automatizada."
 				</div>
 
 				<div class="row textSobre">
-					<div class="col-12 col-sm-6">
+					<div class="col-12 col-sm-6" data-aos="fade-in" data-aos-duration="1000">
 						<h4>
 							Com capital 100% nacional, a <span> GNTEC</span> desenvolve, mantém, evolui e integra
 							sistemas, softwares, serviços e tecnologias que processam milhões de transações
@@ -257,6 +276,8 @@ de forma parametrizável e automatizada."
 								src="assets/img/cel.png"
 								alt="Nossa missão é trazer a nossos clientes inovação em seus processos com qualidade e responsabilidade. "
 								class="img-fluid"
+								data-aos="fade-left"
+								data-aos-duration="1000"
 							/>
 						</div>
 						<a href="assets/docs/PPT_GNTEC_OFICIAL.pptx" download>Baixar Apresentação</a>
@@ -279,13 +300,13 @@ de forma parametrizável e automatizada."
 
 		<footer>
 			<div class="container" id="contato">
-				<div class="row titleSection cleanTitle">
+				<div class="row titleSection cleanTitle" data-aos="fade-in" data-aos-duration="1000">
 					<div class="subTitle">Contato</div>
 					<div>
 						<h2>Fale com a Gntec</h2>
 					</div>
 				</div>
-				<div class="row infosContato">
+				<div class="row infosContato" data-aos="fade-in" data-aos-duration="1000">
 					<div class="col-12 col-sm-4">
 						<img src="assets/img/o-email.png" alt="emails" /><a href="mailto:comercial@gntec.inf.br"
 							>comercial@gntec.inf.br</a
@@ -348,11 +369,35 @@ de forma parametrizável e automatizada."
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			window.onscroll = function () {
+				myFunction();
+			};
+
+			// Get the header
+			var header = document.getElementById("menuHeader");
+
+			// Get the offset position of the navbar
+			var sticky = header.offsetTop;
+
+			// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("fixed-top");
+				} else {
+					header.classList.remove("fixed-top");
+				}
+			}
+		</script>
 
 		<!-- Option 2: Separate Popper and Bootstrap JS -->
 		<!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>

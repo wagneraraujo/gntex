@@ -13,6 +13,11 @@
     @content;
   }
 }
+@mixin for-max-tablet {
+  @media (max-width: 999px) {
+    @content;
+  }
+}
 @mixin for-min-desktop {
   @media (min-width: 900px) and (max-width: 1120px) {
     @content;

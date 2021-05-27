@@ -90,3 +90,9 @@ header {
     @include btnClean(transparent, $primary, $primary);
   }
 }
+
+@include for-max-tablet {
+  #menuHeader {
+    background-color: #fff !important;
+  }
+}
