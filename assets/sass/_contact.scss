@@ -1,0 +1,60 @@
+footer {
+  background: url("/assets/img/rodape.png") no-repeat center center;
+  background-size: cover;
+}
+.cleanTitle {
+  .subTitle {
+    color: #fff !important;
+    background-color: $primary;
+    border: 1px solid #0b6bab;
+  }
+  h2 {
+    color: #fff;
+  }
+}
+.infosContato {
+  margin-bottom: 60px;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  img {
+    margin-right: 10px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .col-12 {
+    margin-bottom: 16px;
+  }
+}
+.formContato {
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 16px;
+    background: #ffffff;
+    border: 1px solid #0f5584;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: 300;
+  }
+  button {
+    @include btnClean(transparent, #fff, #fff);
+  }
+}
+.direitos {
+  background: #0f3b6f;
+  font-weight: 300;
+  text-align: center;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 5px 0;
+  p {
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="/style.0f65040e.css">
 	<script src="/style.0f65040e.js"></script></head>
 	<body>
-		<header>
+		<header id="home">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid align-items-center">
 					<div class="logo navbar-brand">
@@ -65,7 +65,7 @@
 			</div>
 		</header>
 
-		<section class="produtos">
+		<section class="produtos" id="produtos">
 			<div class="container">
 				<div class="row titleSection">
 					<div class="subTitle">Produtos</div>
@@ -147,7 +147,7 @@ de forma parametrizável e automatizada.">
 			</div>
 		</section>
 
-		<section class="servicos">
+		<section class="servicos" id="servicos">
 			<div class="container">
 				<div class="row titleSection">
 					<div class="subTitle">Serviços</div>
@@ -191,7 +191,7 @@ de forma parametrizável e automatizada.">
 			</div>
 		</section>
 
-		<section class="sobre">
+		<section class="sobre" id="sobre">
 			<div class="container">
 				<div class="row titleSection">
 					<div class="subTitle">Sobre</div>
@@ -231,7 +231,7 @@ de forma parametrizável e automatizada.">
 					</div>
 				</div>
 
-				<div class="row principaisClientes">
+				<div class="row principaisClientes" id="clientes">
 					<p>Principais Clientes</p>
 					<picture>
 						<source srcset="/clientes_mob.1efbbcac.png" media="(max-width:1024px)" class="img-fluid">
@@ -240,6 +240,55 @@ de forma parametrizável e automatizada.">
 				</div>
 			</div>
 		</section>
+
+		<footer>
+			<div class="container" id="contato">
+				<div class="row titleSection cleanTitle">
+					<div class="subTitle">Contato</div>
+					<div>
+						<h2>Fale com a Gntec</h2>
+					</div>
+				</div>
+				<div class="row infosContato">
+					<div class="col-12 col-sm-4">
+						<img src="/o-email.7942ea63.png" alt="emails"><a href="mailto:comercial@gntec.inf.br">comercial@gntec.inf.br</a>
+					</div>
+					<div class="col-12 col-sm-4">
+						<img src="/smartphone.8b021e1c.png" alt="telefone">(11) 97745-2294<a href="tel:5511977452294"></a>
+					</div>
+					<div class="col-12 col-sm-4">
+						<img src="/smartphone.8b021e1c.png" alt="telefone">(11) 98785-3814<a href="tel:5511987853814"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-10 mx-auto">
+						<div class="row formContato">
+							<div class="col-12 col-sm-6">
+								<input id="nome" type="text" name="nome" placeholder="Seu Nome" required="">
+							</div>
+							<div class="col-12 col-sm-6">
+								<input id="email" placeholder="Email" type="email" name="email" required="">
+							</div>
+							<div class="col-12 col-sm-6">
+								<input id="telefone" type="number" placeholder="DDD + Telefone" name="telefone" required="">
+							</div>
+							<div class="col-12 col-sm-6">
+								<input id="assunto" type="text" placeholder="Assunto" name="assunto">
+							</div>
+							<div class="col-12 col-sm-12">
+								<textarea name="mensagem" placeholder="Sua mensagem" id="" cols="30" rows="10"></textarea>
+							</div>
+							<div class="col-12 col-sm-12">
+								<button type="submit">Enviar Mensagem</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="direitos">
+			<p>&copy; Todos os direitos reservados</p>
+		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 		<!-- Option 2: Separate Popper and Bootstrap JS -->

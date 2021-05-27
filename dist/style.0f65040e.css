@@ -63,12 +63,14 @@ p {
   line-height: 20px;
 }
 
-section {
+section,
+footer {
   padding: 80px 0px;
   margin: 0px 0px;
 }
 @media (min-width: 1200px) {
-  section {
+  section,
+footer {
     padding: 120px 0px;
     margin: 0px 0px;
   }
@@ -448,6 +450,88 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+footer {
+  background: url("/rodape.ebcd5c62.png") no-repeat center center;
+  background-size: cover;
+}
+
+.cleanTitle .subTitle {
+  color: #fff !important;
+  background-color: #035a94;
+  border: 1px solid #0b6bab;
+}
+.cleanTitle h2 {
+  color: #fff;
+}
+
+.infosContato {
+  margin-bottom: 60px;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+.infosContato img {
+  margin-right: 10px;
+}
+.infosContato a {
+  color: #fff;
+  text-decoration: none;
+}
+.infosContato .col-12 {
+  margin-bottom: 16px;
+}
+
+.formContato input,
+.formContato textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  background: #ffffff;
+  border: 1px solid #0f5584;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-weight: 300;
+}
+.formContato button {
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  text-decoration: none;
+  margin: 8px 0px;
+  transition: background-color 0.6s ease-out;
+}
+.formContato button:hover, .formContato button:focus {
+  background-color: #035a94;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.direitos {
+  background: #0f3b6f;
+  font-weight: 300;
+  text-align: center;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 5px 0;
+}
+.direitos p {
+  font-weight: 300;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=/style.0f65040e.css.map */
