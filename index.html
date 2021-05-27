@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,8 +17,8 @@
 			href="https://fonts.googleapis.com/css2?family=Sora:wght@300;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="assets/sass/style.scss" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/sass/style.scss" />
 	</head>
 	<body>
 		<header id="home">
@@ -105,16 +105,16 @@
 									<img
 										src="assets/img/gcontrol.png"
 										class="img-fluid"
-										data-aos="fade-right"
+										data-aos="fade-up"
 										data-aos-duration="1000"
-										alt="Gcontrol- Gerenciador de Controle Contábil: Sistema de controle de batimentos contábeis e apuração de diferenças 
+										alt="Gncontrol- Gerenciador de Controle Contábil: Sistema de controle de batimentos contábeis e apuração de diferenças 
 de forma parametrizável e automatizada."
 									/>
 								</div>
 							</div>
 
 							<div class="col col-sm-6 textItemProduto pTextLeft">
-								<h2>Gcontrol</h2>
+								<h2>Gncontrol</h2>
 								<p>
 									Gerenciador de Controle Contábil: Sistema de controle de batimentos contábeis e
 									apuração de diferenças de forma parametrizável e automatizada.
@@ -140,7 +140,7 @@ de forma parametrizável e automatizada."
 							<div class="col-12 col-sm-6 order-0 order-sm-1">
 								<div class="imgProduto">
 									<img
-										data-aos="fade-left"
+										data-aos="fade-down"
 										data-aos-duration="1000"
 										src="assets/img/gncer.png"
 										class="img-fluid"
@@ -222,17 +222,21 @@ de forma parametrizável e automatizada."
 					</div>
 				</div>
 				<div class="row listServicos" data-aos="fade-up" data-aos-duration="1000">
-					<div class="itemServicos col-12 col-sm-4 col-md-4">
+					<div class="itemServicos col-12 col-sm-3 col-md-3">
 						<img src="assets/img/check.png" alt="" />
 						<small>Preparação e execução de atividades para LGPD</small>
 					</div>
-					<div class="itemServicos col-12 col-sm-4">
+					<div class="itemServicos col-12 col-sm-3">
 						<img src="assets/img/check.png" alt="" />
 						<small>Desenvolvimento de aplicativos para mobile Android e IOS</small>
 					</div>
-					<div class="itemServicos col-12 col-sm-4">
+					<div class="itemServicos col-12 col-sm-3">
 						<img src="assets/img/check.png" alt="" />
 						<small>Desenvolvimento de sites, Landing Pages e e-commerce</small>
+					</div>
+					<div class="itemServicos col-12 col-sm-3">
+						<img src="assets/img/check.png" alt="" />
+						<small>Consultoria em Licitações.</small>
 					</div>
 				</div>
 			</div>
@@ -276,11 +280,11 @@ de forma parametrizável e automatizada."
 								src="assets/img/cel.png"
 								alt="Nossa missão é trazer a nossos clientes inovação em seus processos com qualidade e responsabilidade. "
 								class="img-fluid"
-								data-aos="fade-left"
+								data-aos="fade-down"
 								data-aos-duration="1000"
 							/>
 						</div>
-						<a href="assets/docs/PPT_GNTEC_OFICIAL.pptx" download>Baixar Apresentação</a>
+						<a href="assets/docs/GNTEC_Institucional.pdf" download>Baixar Apresentação</a>
 					</div>
 				</div>
 
@@ -325,6 +329,8 @@ de forma parametrizável e automatizada."
 				</div>
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-10 mx-auto">
+            <form id="formenvio" action="https://formspree.io/f/mbjqogrq"
+  method="POST">
 						<div class="row formContato">
 							<div class="col-12 col-sm-6">
 								<input id="nome" type="text" name="nome" placeholder="Seu Nome" required />
@@ -353,11 +359,14 @@ de forma parametrizável e automatizada."
 									rows="10"
 								></textarea>
 							</div>
+<input type="hidden" name="_language" value="pt-BR" />
 							<div class="col-12 col-sm-12">
-								<button type="submit">Enviar Mensagem</button>
+								<button type="submit"id="my-form-button">Enviar Mensagem</button>
 							</div>
+              <p id="my-form-status"></p>
 						</div>
-					</div>
+					</div></form>
+
 				</div>
 			</div>
 		</footer>
@@ -396,8 +405,33 @@ de forma parametrizável e automatizada."
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 		<script>
 			AOS.init();
 		</script>
+
+    <script>
+    var form = document.getElementById("formenvio");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Mensagem enviada com sucesso"
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Algo deu errado, por favor, tenta novamente ou entre em contato por telefone."
+      });
+    }
+    form.onclick("submit", handleSubmit)
+</script>
+
 	</body>
 </html>

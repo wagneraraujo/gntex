@@ -92,7 +92,7 @@ header {
 }
 
 @include for-max-tablet {
-  #menuHeader {
+  #menuHeader, .fixed-top {
     background-color: #fff !important;
   }
 }

@@ -1,0 +1,599 @@
+body {
+  font-family: "Sora", sans-serif !important;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 48.83px;
+    line-height: 56px;
+  }
+}
+
+h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p-light {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+section,
+footer {
+  padding: 80px 0px;
+  margin: 0px 0px;
+}
+
+@media (min-width: 1200px) {
+  section,
+footer {
+    padding: 120px 0px;
+    margin: 0px 0px;
+  }
+}
+
+.titleSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 1200px) {
+  .titleSection {
+    margin-bottom: 100px;
+  }
+}
+
+.titleSection .subTitle {
+  background: rgba(3, 90, 148, 0.2);
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #1c477a;
+  padding: 14px 32px;
+  margin-bottom: 30px;
+  display: inline;
+  max-width: 190px;
+}
+
+.titleSection h2 {
+  color: #5d5d5d;
+}
+
+.titleSection h2::after {
+  content: "";
+  width: 60px;
+  display: block;
+  height: 6px;
+  background-color: #f58634;
+  margin: 16px auto;
+}
+
+.fixed-top {
+  margin-bottom: 60px;
+  height: 70px;
+  background-color: #fff;
+}
+
+.fixed-top img {
+  max-height: 50px;
+}
+
+.logo {
+  max-width: 55%;
+  margin: 0;
+}
+
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0px 20px;
+}
+
+.navbar .nav-link {
+  color: #5d5d5d;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-bottom: 4px solid transparent;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:active, .navbar .nav-link:focus {
+  border-bottom: 4px solid #f58634;
+  color: #1c477a !important;
+}
+
+header {
+  background: linear-gradient(194.01deg, #ffffff 9.6%, #eaf2f5 89.64%);
+  padding: 0px 0px 80px 0;
+  height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 0px 0px 120px 0;
+  }
+}
+
+.imgFundo {
+  background-image: none;
+}
+
+@media (min-width: 1200px) {
+  .imgFundo {
+    background-image: url("7e704c1acaefaa597a336bf2e4d30493");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 200px);
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1120px) {
+  .imgFundo {
+    background-image: url("7e704c1acaefaa597a336bf2e4d30493");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 300px);
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .imgFundo {
+    background-image: url("7e704c1acaefaa597a336bf2e4d30493");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 400px);
+    margin-top: 60px;
+  }
+}
+
+.lineTextHeader {
+  padding: 80px 16px;
+  color: #303030;
+}
+
+@media (min-width: 1200px) {
+  .lineTextHeader {
+    padding: 120px 32px;
+  }
+}
+
+.lineTextHeader h1 {
+  color: #035a94;
+  margin-bottom: 16px;
+}
+
+.lineTextHeader h1 span {
+  color: #f58634;
+}
+
+.lineTextHeader h4 {
+  font-weight: 500;
+}
+
+.lineTextHeader p {
+  font-weight: 300;
+  margin-top: 22px;
+}
+
+.lineTextHeader a {
+  border: 2px solid #035a94;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #035a94;
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  text-decoration: none;
+  margin: 8px 0px;
+  transition: background-color 0.6s ease-out;
+}
+
+.lineTextHeader a:hover, .lineTextHeader a:focus {
+  background-color: #035a94;
+  color: #fff;
+  border: 2px solid #035a94;
+}
+
+@media (max-width: 999px) {
+  #menuHeader {
+    background-color: #fff !important;
+  }
+}
+
+.itemProduto {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 1200px) {
+  .itemProduto {
+    margin-bottom: 120px;
+  }
+}
+
+.textItemProduto {
+  margin-top: 26px;
+}
+
+@media (min-width: 1200px) {
+  .textItemProduto {
+    margin-top: 36px;
+  }
+}
+
+.textItemProduto h2 {
+  color: #035a94;
+  margin-bottom: 26px;
+}
+
+.textItemProduto h2::after {
+  content: "";
+  width: 40px;
+  display: block;
+  height: 6px;
+  background-color: #f58634;
+  margin: 10px 0;
+}
+
+.textItemProduto p {
+  font-weight: 300;
+  color: #5d5d5d;
+}
+
+.textItemProduto a {
+  border: 2px solid rgba(93, 93, 93, 0.6);
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(93, 93, 93, 0.6);
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  text-decoration: none;
+  margin: 8px 0px;
+  transition: background-color 0.6s ease-out;
+}
+
+.textItemProduto a:hover, .textItemProduto a:focus {
+  background-color: #035a94;
+  color: #fff;
+  border: 2px solid rgba(93, 93, 93, 0.6);
+}
+
+@media (min-width: 1200px) {
+  .pTextLeft {
+    padding-left: 36px;
+  }
+
+  .pTextRight {
+    padding-right: 39px;
+    padding-left: 36px;
+  }
+}
+
+.smallTextProdutos {
+  margin-bottom: 60px;
+}
+
+.smallTextProdutos img {
+  max-width: 100%;
+  margin-left: 0px;
+  align-content: left;
+}
+
+.smallTextProdutos h5 {
+  font-weight: 600;
+  color: #035a94;
+}
+
+.smallTextProdutos h5::after {
+  content: "";
+  width: 40px;
+  display: block;
+  height: 6px;
+  background-color: #f58634;
+  margin: 10px 0;
+}
+
+.smallTextProdutos p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .smallTextProdutos {
+    width: 520px;
+  }
+  .smallTextProdutos img {
+    width: 100%;
+    margin-left: 0px;
+    text-align: left;
+  }
+  .smallTextProdutos h5 {
+    padding: 0px 38px;
+    font-weight: 600;
+    color: #035a94;
+  }
+  .smallTextProdutos h5::after {
+    content: "";
+    width: 40px;
+    display: block;
+    height: 6px;
+    background-color: #f58634;
+    margin: 10px 0;
+  }
+  .smallTextProdutos p {
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0px 38px;
+  }
+}
+
+.lineSmall {
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicos {
+  background-color: #f9fcff;
+}
+
+.listServicos {
+  padding: 8px;
+  justify-content: center;
+}
+
+.itemServicos {
+  margin: 0;
+  height: auto;
+  margin-bottom: 16px;
+  padding: 12px;
+  display: flex;
+  justify-content: start;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.itemServicos img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+@media (min-width: 1200px) {
+  .itemServicos {
+    font-size: 16px;
+    justify-content: center;
+    width: calc(22% - 16px);
+    margin: 0px 0px 16px 16px;
+    height: 86px;
+  }
+}
+
+.textSobre h4 {
+  color: #5d5d5d;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.textSobre h4 span {
+  color: #f58634;
+}
+
+.textSobre p {
+  color: #5d5d5d;
+  font-weight: 300;
+}
+
+.textSobre a {
+  border: 2px solid #035a94;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #035a94;
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  text-decoration: none;
+  margin: 8px 0px;
+  transition: background-color 0.6s ease-out;
+  width: 250px;
+  margin-top: 36px;
+}
+
+.textSobre a:hover, .textSobre a:focus {
+  background-color: #035a94;
+  color: #fff;
+  border: 2px solid #035a94;
+}
+
+.textSobre .imgAndButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.principaisClientes {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  background: url("936f1dded780ee56a19cc2b9016d4030") no-repeat center center;
+  background-size: cover;
+}
+
+.cleanTitle .subTitle {
+  color: #fff !important;
+  background-color: #035a94;
+  border: 1px solid #0b6bab;
+}
+
+.cleanTitle h2 {
+  color: #fff;
+}
+
+.infosContato {
+  margin-bottom: 60px;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.infosContato img {
+  margin-right: 10px;
+}
+
+.infosContato a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.infosContato .col-12 {
+  margin-bottom: 16px;
+}
+
+.formContato input,
+.formContato textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  background: #ffffff;
+  border: 1px solid #0f5584;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-weight: 300;
+}
+
+.formContato button {
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  text-decoration: none;
+  margin: 8px 0px;
+  transition: background-color 0.6s ease-out;
+}
+
+.formContato button:hover, .formContato button:focus {
+  background-color: #035a94;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.direitos {
+  background: #0f3b6f;
+  font-weight: 300;
+  text-align: center;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 5px 0;
+}
+
+.direitos p {
+  font-weight: 300;
+  font-size: 14px;
+}
