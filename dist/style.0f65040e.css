@@ -115,6 +115,15 @@ footer {
   margin: 16px auto;
 }
 
+.fixed-top {
+  margin-bottom: 60px;
+  height: 70px;
+  background-color: #fff;
+}
+.fixed-top img {
+  max-height: 50px;
+}
+
 .logo {
   max-width: 55%;
   margin: 0;
@@ -235,6 +244,11 @@ header {
   border: 2px solid #035a94;
 }
 
+@media (max-width: 999px) {
+  #menuHeader {
+    background-color: #fff !important;
+  }
+}
 .itemProduto {
   margin-bottom: 80px;
 }
